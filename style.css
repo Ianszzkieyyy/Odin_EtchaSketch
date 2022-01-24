@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #E1D8ED;
+    background-color: #ececec;
+    color: #202020;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -23,29 +24,150 @@ body {
 
 .header {
     font-size: 48px;
-    text-transform: uppercase;
 }
 
 .interface {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+}
+
+.int-color, .int-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #color-picker {
-    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
     height: 50px;
-    border-radius: 50%;
-    border: 3px solid white;
+    border: none;
+    cursor: pointer;
 }
+
+
+/* COLOR PICKER */
+#color-picker::-webkit-color-swatch {
+    border-radius: 4px;
+    border: none;
+}
+
+#color-picker::-moz-color-swatch {
+    border-radius: 4px;
+    border: none;
+}
+
+.clear-btn {
+    height: 50px;
+    font-size: 18px;
+    padding: 0 24px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px rgba(139, 139, 139, 0.3);
+}
+
+/* RANGE SLIDER */
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 20px;
+    border-radius: 4px;
+    background: #202020;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 20px;
+    border-radius: 4px;
+    background: #202020;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #ffffff;
+    border: 0px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #ffffff;
+    border: 0px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 20px;
+    border-radius: 4px;
+    background: #202020;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+  }
+
 
 .container {
     width: 500px;
     height: 500px;
     background-color: white;
     display: grid;
+    box-shadow: 1px 1px 15px rgba(139, 139, 139, 0.3);
 }
 
 .panel {
     background-color: white;
 }
+
+

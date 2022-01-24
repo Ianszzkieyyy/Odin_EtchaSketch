@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
+const colorInput = document.querySelector('#color-picker');
+const colorInputHex = document.querySelector('#cp-value');
 
-let colorInput = document.querySelector('#color-picker');
 let gridCount = 50; // TEMPORARY
 let panels;
 
@@ -20,6 +21,7 @@ const makeGrid = function(size) {
 makeGrid(gridCount);
 
 colorInput.addEventListener('input', (e) => {
+    colorInputHex.textContent = colorInput.value
     return colorInput.value;
 });
 
