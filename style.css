@@ -60,6 +60,10 @@ body {
     border: none;
 }
 
+#cp-value {
+  width: 66px;
+}
+
 .clear-btn {
     height: 50px;
     font-size: 18px;
@@ -69,6 +73,13 @@ body {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 1px 1px 15px rgba(139, 139, 139, 0.3);
+    transition: 0.2s;
+}
+
+.clear-btn:hover {
+    color: white;
+    background-color: #202020;
+    transition: 0.2s;
 }
 
 /* RANGE SLIDER */
