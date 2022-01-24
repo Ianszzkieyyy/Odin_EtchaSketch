@@ -28,6 +28,7 @@ body {
 
 .interface {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -41,5 +42,10 @@ body {
 .container {
     width: 500px;
     height: 500px;
+    background-color: white;
+    display: grid;
+}
+
+.panel {
     background-color: white;
 }
